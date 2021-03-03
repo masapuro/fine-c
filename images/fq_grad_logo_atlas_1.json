@@ -1,0 +1,99 @@
+﻿{"frames": {
+
+"CachedBmp_362":
+{
+	"frame": {"x":269,"y":99,"w":60,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":96},
+	"sourceSize": {"w":60,"h":96}
+},
+"CachedBmp_363":
+{
+	"frame": {"x":227,"y":0,"w":90,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":97},
+	"sourceSize": {"w":90,"h":97}
+},
+"CachedBmp_364":
+{
+	"frame": {"x":331,"y":99,"w":26,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":96},
+	"sourceSize": {"w":26,"h":96}
+},
+"CachedBmp_365":
+{
+	"frame": {"x":124,"y":0,"w":101,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":101,"h":97},
+	"sourceSize": {"w":101,"h":97}
+},
+"CachedBmp_366":
+{
+	"frame": {"x":0,"y":0,"w":122,"h":127},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":127},
+	"sourceSize": {"w":122,"h":127}
+},
+"CachedBmp_367":
+{
+	"frame": {"x":411,"y":0,"w":89,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":96},
+	"sourceSize": {"w":89,"h":96}
+},
+"CachedBmp_368":
+{
+	"frame": {"x":319,"y":0,"w":90,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":97},
+	"sourceSize": {"w":90,"h":97}
+},
+"CachedBmp_369":
+{
+	"frame": {"x":201,"y":99,"w":66,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":96},
+	"sourceSize": {"w":66,"h":96}
+},
+"CachedBmp_370":
+{
+	"frame": {"x":359,"y":99,"w":25,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":96},
+	"sourceSize": {"w":25,"h":96}
+},
+"CachedBmp_371":
+{
+	"frame": {"x":411,"y":98,"w":80,"h":99},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":99},
+	"sourceSize": {"w":80,"h":99}
+},
+"CachedBmp_372":
+{
+	"frame": {"x":124,"y":99,"w":75,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":75,"h":96},
+	"sourceSize": {"w":75,"h":96}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "20.0.3.25487",
+	"image": "fq_grad_logo_atlas_1.png",
+	"format": "undefined",
+	"size": {"w":512,"h":256},
+	"scale": "1"
+}
+}

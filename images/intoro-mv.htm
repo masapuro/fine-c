@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0017)https://fineq.ai/ -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="AkvQtaqndnlm6aVlsQrncNxlzlx5hbCxpZBGYx4u">
+
+	<title>ファインクオリティ | 株式会社ファインクオリティ 大阪</title>
+		<meta name="keywords" content="株式会社ファインクオリティ、マンション管理会社　大阪、マンション管理会社　見直し、マンション管理　オーナー、固定費">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<link rel="stylesheet" href="./intoro-mv_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="./intoro-mv_files/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="./intoro-mv_files/aos.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="./intoro-mv_files/app.js" defer=""></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+	<link href="./intoro-mv_files/css" rel="stylesheet">
+	<link rel="stylesheet" href="./intoro-mv_files/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Styles -->
+	<link href="./intoro-mv_files/aos.css" rel="stylesheet">
+	<link href="./intoro-mv_files/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="./intoro-mv_files/style.min.css">
+	
+	
+	<link rel="apple-touch-icon" type="image/png" href="https://fineq.ai/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="https://fineq.ai/images/favicons/icon-192x192.png">
+
+	
+  <script src="./intoro-mv_files/lottie.min.js" integrity="sha512-bydaxcpHiWGaIdaqCwrSYIXjj4xRh4P1C3BE+AdJUgYAKAhEWeAt5GzDgeYdLT+MGBYeLPJf7cTz4llPwwdk+A==" crossorigin="anonymous"></script>
+  <script src="./intoro-mv_files/createjs.min.js"></script>
+  <script src="./intoro-mv_files/fq_opning.js"></script>
+  <script>
+  window.onload = function(){
+	window.scrollTo(0,0);
+	// let body = document.querySelector('body');
+	// body.classList.add('overflow-hidden');
+
+	  setTimeout(function(){
+		  init();
+		  window.scrollTo(0,0);
+	  }, 4000);
+	  let opning = document.querySelector('#top-opning');
+	  setTimeout(function(){
+		// body.classList.remove('overflow-hidden');
+		opning.remove();
+	  }, 9500);
+  };
+  var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+  function init() {
+	  canvas = document.getElementById("canvas");
+	  anim_container = document.getElementById("animation_container");
+	  dom_overlay_container = document.getElementById("dom_overlay_container");
+	  var comp=AdobeAn.getComposition("D9CBE07F6AC98844873213BAACECB79B");
+	  var lib=comp.getLibrary();
+	  handleComplete({},comp);
+  }
+  function handleComplete(evt,comp) {
+	  //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	  var lib=comp.getLibrary();
+	  var ss=comp.getSpriteSheet();
+	  exportRoot = new lib.fq_grad_logo_ok_();
+	  stage = new lib.Stage(canvas);	
+	  //Registers the "tick" event listener.
+	  fnStartAnimation = function() {
+		  stage.addChild(exportRoot);
+		  createjs.Ticker.framerate = lib.properties.fps;
+		  createjs.Ticker.addEventListener("tick", stage);
+	  }	    
+	  //Code to support hidpi screens and responsive scaling.
+	  AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);
+	  AdobeAn.compositionLoaded(lib.properties.id);
+	  fnStartAnimation();
+  }
+  </script>
+  <style>
+	  #animation_container {
+		position:absolute;
+		margin:auto;
+		left:0;right:-2px;
+		top:0;bottom:0;
+		height: 450px;
+	}
+	  body{
+			  margin: 0;padding: 0;
+		  }
+		  .op-flex-column{
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  width: 100%;
+			  height: 100vh;
+			  animation: finishOut 8s ease 3s forwards;
+		  }
+		  .op-flex-item-center{
+			  width: 50%;
+			  max-width: 600px;
+			  position: relative;
+		  }
+		  /* .position-absolute{
+			  position: absolute;
+			  top: 0;left: 0;
+		  } */
+		  /* .canvas_size{
+			  width: 100% !important;
+			  height: 75% !important;
+			  margin: auto;
+		  } */
+		  canvas, #animation_container{
+			  width: 88.4% !important;
+			  height: auto !important;
+		  }
+		  @keyframes  finishOut {
+			  60% {
+				  opacity: 1;
+				  display: block;
+			  }
+  
+			  99% {
+				  opacity: 0;
+			  }
+			  100% {
+				  display: none !important;
+				  /* z-index: -99; */
+			  }
+		  }
+		  @keyframes  fadeIn {
+			  50% {
+				  opacity: 0;
+			  }
+			  100% {
+				  opacity: 1;
+			  }
+		  }
+		  @keyframes  fadeOut {
+			  50% {
+				  opacity: 1;
+			  }
+			  100% {
+				  opacity: 0;
+			  }
+		  }
+		  @keyframes  circleIn {
+		  25% {
+			  clip-path: circle(0 at 50% 50%);
+			  -webkit-clip-path: circle(0 at 50% 50%);
+			  -ms-filter: blur(12px);
+				filter: blur(12px);
+		  }
+		  
+		  100% {
+			  clip-path: circle(100% at 50% 50%);
+			  -webkit-clip-path: circle(100% at 50% 50%);
+			  -ms-filter: blur(0px);
+				filter: blur(0px);
+		  }
+		  }
+		  @keyframes  blurIn {
+			  0%{
+				  top: 0;
+				  -ms-filter: blur(6px);
+					filter: blur(6px);
+			  }
+			  60%{
+				  top: 0;
+				  -ms-filter: blur(3px);
+					filter: blur(3px);
+			  }
+			  100%{
+				  /* top: -30px; */
+				  -ms-filter: blur(0px);
+					filter: blur(0px);
+			  }
+		  }
+		  @keyframes  fadeInUp {
+			  50% {
+				  opacity: 0;
+				  top: 50%;
+			  }
+			  100% {
+				  opacity: 1;
+				  top: 0;
+			  }
+		  }
+  
+		  #lottie{
+			  animation: fadeOut 4s ease 3s forwards;
+			  position: relative;
+			  /* top: 5px;
+			  left: -1px; */
+		  }
+		  .animate{
+			  animation: fadeIn 5s ease 2s forwards;
+		  }
+  </style>
+  <script defer="" src="./intoro-mv_files/processing.min.js"></script>
+  <script defer="" src="./intoro-mv_files/WaveShape.js"></script>
+  <script defer="" src="./intoro-mv_files/4_spotlight_and_wave.js"></script>
+
+</head>
+<body class="bg-grad w-100 front-page" style="margin:0px;" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+		
+
+	<header class="header">
+		<div class="header-fixed-menu shadow-sm d-flex justify-content-between align-items-stretch bg-white position-fixed w-100">
+			<h1 class="m-3 h6 logo">
+				<a href="https://fineq.ai/" class="text-decoration-none text-primary">
+					<img src="./intoro-mv_files/fq_logo.png" alt="ファインクオリティロゴ" width="50"><span class="p-1 font-weight-bold font-serif"><img src="./intoro-mv_files/fq_logo_text@2x.png" alt="FINEQUALITY" width="150"></span>
+				</a>
+			</h1>
+			<nav class="ml-auto nav">
+				<ul class="d-none d-md-flex justify-content-space-lg-around justify-content-between w-100 align-items-stretch list-unstyled my-0 h-100 font-weight-bold">
+					<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/aboutus" class="p-3">私たちについて</a></li>
+					<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/description" class="p-3">業務内容</a></li>
+					<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/howit" class="p-3">ご契約の流れ</a></li>
+					<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/owner" class="p-3">ファインクオリティのひとりごと</a></li>
+					<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/company" class="p-3">会社案内</a></li>
+					<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/contact" class="btn btn-primary border-0 d-flex align-items-center contact bg-grad-secondary px-2 px-sm-3 px-lg-5 h-100"><span class="d-block text-white"><i class="fa fa-envelope mr-1" aria-hidden="true"></i>お問合せ</span></a></li>
+				</ul>
+				
+				<div class="d-md-none d-flex align-items-center navbar-light mr-3">
+					<a href="https://fineq.ai/#" class="btn btn-outline-secondary ml-auto" data-toggle="modal" data-target="#exampleModal01" aria-controls="exampleModal01" aria-expanded="false" aria-label="Modal navigation" role="button">
+						<span class="navbar-toggler-icon"></span>
+					</a>
+				</div>
+				<div class="modal fade" id="exampleModal01" tabindex="-1" role="dialog" aria-labelledby="exampleModal01Title" aria-hidden="true">
+					<div class="modal-dialog dialog-left" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModal01Title">MENU</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<ul class="p-0 font-weight-bold list-unstyled">
+								<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/aboutus" class="p-3">私たちについて</a></li>
+								<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/description" class="p-3">業務内容</a></li>
+								<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/howit" class="p-3">ご契約の流れ</a></li>
+								<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/owner" class="p-3">ファインクオリティのひとりごと</a></li>
+								<li class="h-100 d-flex align-items-center"><a href="https://fineq.ai/company" class="p-3">会社案内</a></li>
+							</ul>
+						</div>
+						<div class="modal-footer">
+							<a href="https://fineq.ai/contact" class="btn btn-primary border-0 d-flex justify-content-center align-items-center contact bg-grad-secondary px-2 px-sm-3 px-lg-5 h-100 w-100"><span class="d-block text-white"><i class="fa fa-envelope" aria-hidden="true"></i>お問合せ</span></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</nav>
+			
+		</div>
+
+			<div class="top-mv d-flex justify-content-center align-items-center top-mv-bg mt-5 pt-3">
+		<div class="text-center text-primary text-shadow-white mv-bottom" id="top-heading">
+			<h2 class="">
+				<span class="d-block h1 font-weight-bold text-secondary aos-init aos-animate" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="9000" data-aos-once="true">マンションオーナー様の新しい支え</span>
+				<span class="d-block h1 font-weight-bold text-secondary mt-4 mt-md-2 aos-init aos-animate" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="10000" data-aos-once="true">ファインクオリティは安心を提供します。</span>
+				<!-- <span class="d-block h1 font-italic mt-4 mb-0"><span class="font-weight-light">We provides </span><span class="font-weight-bold">peace of mind.</span></span> -->
+			</h2>
+			<p class="mr-0 mr-md-5">
+				<span class="h2 mt-5 mt-md-5 d-block aos-init aos-animate" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="12000" data-aos-once="true">万全の支えになる事をオーナー様に誓い、</span>
+				<span class="h2 mt-4 mt-md-3 pl-0 pl-md-5 ml-0 ml-md-5 d-block aos-init aos-animate" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="13000" data-aos-once="true">入居者様にお届けする事をお約束します。</span>
+			</p>
+		</div>
+	</div>
+	<div class="blur-overlay before-only"></div>
+	<canvas anvas="" id="canvasOverlay" style="z-index:-1;" width="1680" height="882"></canvas>
+		
+
+	</header>
+    <div id="app" class="mt-5">
+            
+	<main role="main" id="main-contents" class="">
+		<div class="top-video mt-5 py-5">
+			<div style="padding:56.34% 0 0 0;position:relative;"><iframe src="./intoro-mv_files/454042576.html" id="video0" data-aos="fade-in" data-aos-id="video0" data-aos-mirror="true" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" class="aos-init aos-animate" data-ready="true"></iframe></div><script src="./intoro-mv_files/player.js"></script>
+		</div>
+
+		<!-- 動画アピールセクション -->
+		<section class="top-appeal">
+			<div class="blur-overlay before-only"></div>
+			<div class="position-relative mt-0 mt-md-3">
+				<div class="top-appeal-video-bg top-appeal-video-bg1">
+					<div class="top-appeal-video-wrap position-absolute">
+						<img src="./intoro-mv_files/video-overlay1.png" alt="" width="454" height="240" class="position-absolute">
+						<video data-aos="fade-in" data-aos-id="video1" data-aos-mirror="true" class="w-100 _h-100 mw-100 object-fit-cover _position-absolute opacity-1 r-0 z-index--1 aos-init" src="images/1022860051-comp300.mp4" _autoplay="" muted="" loop="">
+							<!--<img src="images/jewellery.jpg" alt="Placeholder">-->
+						</video>
+					</div>
+					<div class="container py-5 position-relative">
+						<div class="py-6">
+							<div class="row">
+								<div class="col-8 offset-2 col-md-5 offset-md-0 mb-5 mb-md-0 bg-illust1"></div>
+								<div class="col-md-6 d-flex align-items-end">
+									<h2 class="text-center text-md-left mx-auto"><span class="font-weight-bold aos-init" data-aos="original" data-aos-duration="1500" data-aos-offset="300">オーナー様へ<br>
+											入居者満足度の確保と<br class="d-inline-block d-sm-none">経費節減</span>
+										<span class="d-block font-italic"><span class="font-weight-light">To the </span><span class="font-weight-bold">owner</span></span>
+									</h2>
+								</div>
+								<div class="col-md-12 mt-5 text-center aos-init" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+									<p>入居者様に快適な日常生活を送って頂くことで、入居率・入居の継続・入居者の質が確保できます。<br class="d-none d-md-inline-block">
+										それは経費節減となり、オーナー様の収益確保、資産価値の維持となります。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blur-overlay blur-overlay-video1to2"></div>
+			<div class="position-relative mt-0 mt-md-5">
+				<div class="top-appeal-video-bg top-appeal-video-bg2">
+					<div class="top-appeal-video-wrap position-absolute">
+						<img src="./intoro-mv_files/video-overlay2.png" alt="" class="position-absolute">
+						<video data-aos="fade-in" data-aos-id="video2" data-aos-mirror="true" class="w-100 top-video2 _h-100 mw-100 _object-fit-cover _position-absolute opacity-1 z-index--1 aos-init" src="images/Pixta 53737982_comp250_15s.mp4" _autoplay="" muted="" loop="">
+							<!--<img src="images/jewellery.jpg" alt="Placeholder">-->
+						</video>
+					</div>
+					<div class="container pb-5 overflow-hidden-x position-relative">
+						<div class="py-6">
+							<div class="row">
+								<div class="col-8 offset-2 col-md-5 offset-md-0 mb-5 mb-md-0 bg-illust1 bg-illust2"></div>
+								<div class="col-md-6 d-flex align-items-end">
+									<h2 class="text-center text-md-left mx-auto"><span class="font-weight-bold aos-init" data-aos="original" data-aos-duration="1500" data-aos-offset="300">管理会社様へ<br>
+											管理会社の負担を軽減します</span>
+										<span class="d-block font-italic"><span class="font-weight-light">To the </span><span class="font-weight-bold">Management Company</span></span>
+									</h2>
+								</div>
+								<div class="col-md-12 mt-5 text-center aos-init" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+									<p>「顔が見える業者」を目指し、いち早く対応する事で入居者様からのクレームを減らします。<br class="d-none d-md-inline-block">
+										そして、オーナー様の収益確保をサポートする管理会社の役割を代行し、管理会社様のお手伝いを致します。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blur-overlay blur-overlay-video2to3"></div>
+			<div class="position-relative mt-0 mt-md-5">
+				<div class="top-appeal-video-bg top-appeal-video-bg3">
+					<div class="top-appeal-video-wrap position-absolute">
+						<img src="./intoro-mv_files/video-overlay3.png" alt="" class="position-absolute">
+						<video data-aos="fade-in" data-aos-id="video3" data-aos-mirror="true" class="w-100 _top-video3 _h-100 mw-100 _object-fit-cover _position-absolute opacity-1 z-index--1 aos-init" src="images/Pixta 36818258_comp150.mp4" _autoplay="" muted="" loop="">
+						</video>
+					</div>
+					<div class="container pb-5 position-relative">
+						<div class="py-6">
+							<div class="row">
+								<div class="col-md-4 offset-md-2 d-flex align-items-end order-2 order-md-1">
+									<h2 class="text-center text-md-left mx-auto"><span class="font-weight-bold aos-init" data-aos="original" data-aos-duration="1500" data-aos-offset="300">入居者様へ<br>
+											快適な日常生活の提供</span>
+										<span class="d-block font-italic"><span class="font-weight-light">To the </span><span class="font-weight-bold">resident</span></span>
+									</h2>
+								</div>
+								<div class="col-8 offset-2 col-md-5 offset-md-0 mb-5 mb-md-0 bg-illust1 bg-illust3 order-1 order-md-2"></div>
+								<div class="col-md-12 mt-5 text-center order-3 aos-init" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+									<p>入居者様との会話を大切にする事で、トラブル、または、トラブルへの対応を適切に対処し、<br class="d-none d-md-inline-block">
+										行き届いた心配りで入居者様に快適な日常生活を送って頂きます。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blur-overlay blur-overlay-video3finish"></div>
+		</section>
+		<!-- //動画アピールセクション -->
+
+		<!-- 3アピールセクション -->
+		<section class="top-appeal2 my-10 py-5 position-relative bg-ol-right overflow-hidden">
+			<div class="container">
+				<h2 class="text-center h-right-flower top-h-right-flower py-4 font-weight-bold"><span data-aos="original" data-aos-duration="1500" data-aos-delay="300" class="aos-init">マンション経営で<br class="d-inline-block d-sm-none">お困りのことは何ですか?</span></h2>
+				<div class="row mt-5">
+					<ul class="col-md-8 _offset-md-1 col-xl-10 _offset-xl-1 d-flex justify-content-between align-items-center list-unstyled font-weight-bold h5">
+						<li class="appeal-circle aos-init" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">コスト・維持費</li>
+						<li class="appeal-circle appeal-circle2 aos-init" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">入居者様・業者様への対応</li>
+						<li class="appeal-circle appeal-circle3 aos-init" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">マンションの修理やメンテナンス</li>
+					</ul>
+				</div>
+			</div>
+			<p class="text-center mt-5 p-4 p-md-5 top-appeal2-circle-h text-secondary font-weight-bold h3 kakko aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">お悩みのオーナー様へ</p>
+			<div class="text-center bg-pink-light mb-5 py-8 blur-overlay after-fix aos-init" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="100" data-aos-once="true">
+				<div class="appeal-bg-leaf d-inline-block text-shadow-white">
+					<p class="text-center mt-md-3 h1 font-serif aos-init" data-aos="original" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="200" _data-aos-once="true">
+						大切な資産を守り未来へ繋げる
+					</p>
+					<p class="text-center mt-2 mt-md-3 h2 font-serif aos-init" data-aos="original" data-aos-duration="3000" data-aos-delay="800" data-aos-offset="200" _data-aos-once="true">
+						安心のために
+					</p>
+					<p class="text-center mt-2 font-serif h2 d-inline-block aos-init" data-aos="original" data-aos-duration="3000" data-aos-delay="1600" data-aos-offset="200" _data-aos-once="true">
+						<span class="d-inline-block mt-1">ファインクオリティが</span>提供するもの</p>
+				</div>
+			</div>
+
+			<div class="container my-10 mb-0 bg-wave aos-init" data-aos="fade-in" data-aos-duration="1000">
+				<div class="text-center"><h3 class="mt-5 py-3 top-appeal2-intro text-center h2 border-bottom border-primary border-width-3 d-inline-block font-weight-bolder aos-init" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">オーナーズプランのご紹介</h3></div>
+				<p class="text-center mt-md-3 fz-12e aos-init" data-aos="original" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200" _data-aos-once="true">
+					固定費の掛からない、<br class="d-inline-block d-sm-none">オーナー様の代行を致します
+				</p>
+				<div class="row d-flex mt-5 pt-5 top-appeal2-intro-container">
+					<div class="top-appeal2-intro-box top-appeal2-intro-box1 shadow m-4 p-4 bottom3 aos-init" data-aos="original" data-aos-duration="1500" data-aos-delay="300">
+						<h4 class="font-weight-bold">ランニングフリー</h4>
+						<p>費用はトラブル対応が<br>発生した場合のみ<br>無駄な経費はいりません。</p>
+					</div>
+					<div class="top-appeal2-intro-box top-appeal2-intro-box2 shadow m-4 p-4 bottom2 aos-init" data-aos="original" data-aos-duration="2000" data-aos-delay="600">
+						<h4 class="font-weight-bold">マンション<br>コンシェルジュ</h4>
+						<p>オーナー様に代わって、<br>入居者様の対応をし、<br>随時報告させて頂きます。</p>
+					</div>
+					<div class="top-appeal2-intro-box top-appeal2-intro-box3 shadow m-4 p-4 bottom1 aos-init" data-aos="original" data-aos-duration="2500" data-aos-delay="900">
+						<h4 class="font-weight-bold">プロフェッショナル</h4>
+						<p>配管設備を熟知した<br>責任あるスタッフが<br>信頼を安心を<br>お届け致します。</p>
+					</div>
+				</div>
+				<div class="text-center mt-5 pt-5"><a href="https://fineq.ai/howit" class="btn btn-lg px-5 py-3 btn-light shadow btn-bnr">契約の流れはこちら<svg class="ml-2 text-secondary" width="0.8em" height="0.8em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"></path>
+				  </svg></a></div>
+			</div>
+		</section>
+		<!-- //3アピールセクション -->
+	</main>
+
+	</div>
+	<aside class="mt-5">
+				<div class="container _py-5">
+			<h3 class="text-center text-primary text-shadow-white _mt-5" id="page-heading">
+				<span class="d-block h2 font-weight-bold text-secondary aos-init" data-aos="fade-up" data-aos-duration="1500">ファインクオリティのひとりごと</span>
+				<span class="d-block h2 font-italic mt-4 mb-0 aos-init" data-aos="fade-up" data-aos-duration="2300"><span class="font-weight-light">hitori-goto
+					
+				</span>
+			</span></h3>
+			<div class="row justify-content-center align-item">
+									<div class="_text-center _position-relative col-md-6 col-lg-3 pt-5">
+						<a href="https://fineq.ai/owner/1" class="bg-primary-lighten p-3 _mt-5 _bg-left-flower-after _bg-right-flower-before position-relative shadow-sm d-block h-100 text-left">
+															<img src="./intoro-mv_files/1607915831_1.jpeg" class="object-fit-cover w-100 mb-2" width="219" height="150">
+														<h4 class="h6 text-secondary font-weight-bold">有馬離宮でのひととき</h4>
+							<p class="fz-08e mb-0">
+																	このたび新しいホームページを立ち上げることが出来ました。
+いろいろとアドバイスを頂いたお客様もお喜びくださって、有馬離宮にご招待くださいました。
+おかげさまで大...
+															</p>
+						</a>
+					</div>
+							</div>
+		</div>
+		<div class="text-center mt-5 pt-3"><a href="https://fineq.ai/owner" class="btn btn-lg px-5 btn-light shadow">more→</a></div>
+		
+				<div class="container mt-10">
+			<h3 class="text-center text-primary text-shadow-white _mt-5">
+				<span class="d-block h2 font-weight-bold text-secondary aos-init" data-aos="fade-up" data-aos-duration="1500">実績・お客様の声</span>
+				<span class="d-block h2 font-italic mt-4 mb-0 aos-init" data-aos="fade-up" data-aos-duration="2300"><span class="font-weight-light">ACHIEVEMENT &amp; USER's </span><span class="font-weight-bold">VOICE</span>
+				</span>
+			</h3>
+			<div class="row justify-content-center">
+							</div>
+		</div>
+		
+		<!-- メニュー  -->
+		<div class="top-menu-appeal container mt-8 p-2 p-md-5">
+			<ul class="d-flex justify-content-around list-unstyled flex-wrap">
+				<li class="bg-white shadow-sm">
+					<a href="https://fineq.ai/aboutus" class="text-decoration-none tex">ファインクオリティが想う事</a>
+				</li>
+				<li class="bg-white shadow-sm">
+					<a href="https://fineq.ai/description" class="text-decoration-none">業務内容</a>
+				</li>
+				<li class="bg-white shadow-sm">
+					<a href="https://fineq.ai/howit" class="text-decoration-none">オーナーズプラン</a>
+				</li>
+				<li class="bg-white shadow-sm">
+					<a href="https://fineq.ai/owner" class="text-decoration-none">ファインクオリティのひとりごと</a>
+				</li>
+			</ul>
+		</div>
+		<!-- //メニュー  -->
+					<section>
+				<h2 class="text-center text-primary font-weight-bold">お気軽にお問合せください</h2>
+				<p class="text-center text-primary font-weight-bold fz-12e">お問い合わせ、ご要望等は以下からどうぞ</p>
+				<div class="text-center mt-5 pt-3"><a href="https://fineq.ai/contact" class="btn btn-lg px-5 py-3 rounded-pill btn-light shadow fz-14e text-primary font-weight-bold">お問合せ</a></div>
+			</section>
+			</aside>
+
+	<footer class="mt-5">
+		<div class="mt-5 p-5 bg-black">
+			<small class="text-center d-block text-white">©FINEQUALITY Inc. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+		  <script>
+		  let animation = lottie.loadAnimation({
+			  container: document.getElementById('lottie'), 
+			  renderer: 'svg', // 描画形式
+			  loop: false, // trueにしたらループ。1回再生の場合はfalse
+			  autoplay: true, // 自動再生
+			  path: 'js/data_resize.json' // jsonのパスを指定
+		  });
+	  </script>
+	 
+	  <!-- JS  -->
+	  <script src="./intoro-mv_files/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	  <script>
+		$(document).ready(function(){
+			var hSize = $(window).height();
+			$('.mainvisual').height(hSize); // アドレスバーを除いたサイズを付与
+			});
+			$(window).resize(function(){ // ページをリサイズした時の処理
+			var hSize = $(window).height();
+			$('.mainvisual').height(hSize); // アドレスバーを除いたサイズを付与
+		});
+	  </script>
+	  <script src="./intoro-mv_files/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	  <script src="./intoro-mv_files/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	  <script src="./intoro-mv_files/aos.js"></script>
+	<script>
+		var player = new Vimeo.Player($('#video0'));
+		player.pause().then(function() {
+			console.log('一時停止');
+		});
+		AOS.init({
+			mirror: false,
+		});
+		document.addEventListener('aos:in:video0', function(e) {
+			console.log(e, 'in_Vimeo');
+			// e.detail.play();
+			player.play().then(function() {
+				console.log('再生');
+			}).catch(function(error) {
+				console.log(error);
+			});
+		});
+		document.addEventListener('aos:out:video0', function(e) {
+			console.log(e, 'out_Vimeo');
+			// e.detail.pause();
+			player.pause().then(function() {
+				console.log('一時停止');
+			});
+		});
+		document.addEventListener('aos:in:video1', function(e) {
+			console.log(e, 'in');
+			e.detail.play();
+		});
+		document.addEventListener('aos:out:video1', function(e) {
+			console.log(e, 'out');
+			e.detail.pause();
+		});
+		document.addEventListener('aos:in:video2', function(e) {
+			console.log(e, 'in');
+			e.detail.play();
+		});
+		document.addEventListener('aos:out:video2', function(e) {
+			console.log(e, 'out');
+			e.detail.pause();
+		});
+		document.addEventListener('aos:in:video3', function(e) {
+			console.log(e, 'in');
+			e.detail.play();
+		});
+		document.addEventListener('aos:out:video3', function(e) {
+			console.log(e, 'out');
+			e.detail.pause();
+		});
+	</script>
+
+</body></html>
