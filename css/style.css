@@ -295,6 +295,7 @@ a *:hover {
 .header .header-fixed-menu {
   z-index: 9000;
   top: 0;
+  height: 72px;
 }
 
 .header .logo {
