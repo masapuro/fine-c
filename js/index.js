@@ -62,4 +62,16 @@
       observer.observe(img);
     });
   })();
+
+  // 画面表示
+  $(window).scroll(function (){
+    $(".res-plan").each(function(){
+      var hit		= $(this).offset().top;
+      var scroll	= $(window).scrollTop();
+      var wHeight	= $(window).height();
   
+      if (scroll > hit - wHeight + wHeight/100){
+        $(this).addClass("run");
+      }
+    });
+  });
