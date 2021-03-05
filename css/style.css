@@ -1838,6 +1838,14 @@ letter-spacing: 0.02em;
   align-items:flex-start;
   position:relative;
 }
+.samplex {
+  width: 396px;
+  height: 52px;
+}
+.sampley {
+  width: 624px;
+  height: 52px;
+}
 /* ani-headerのアニメーション */
 .ani-header1 {
   overflow: hidden;
@@ -1871,6 +1879,8 @@ letter-spacing: 0.02em;
   0% {
     opacity: 0;
     width: 0;
+    font-size: 0;
+    background-color: #fff;
     height: 52px;
   }
 }
@@ -1895,6 +1905,7 @@ letter-spacing: 0.02em;
   width: 624px;
   height: 52px;
 }
+
 .ani-header2.sample-animation {
   animation: ani-header2 2s cubic-bezier(.4, 0, .2, 1);
 }
@@ -1915,6 +1926,7 @@ letter-spacing: 0.02em;
 @keyframes ani-header2 {
   0% {
     opacity: 0;
+    font-size: 0;
     width: 0;
     height: 52px;
   }
@@ -1961,7 +1973,13 @@ letter-spacing: 0.02em;
   -webkit-animation: fadeinUp 2s linear 0s 1;
 }
 
-
+.fadeIn-1 {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+}
+@keyframes fadeIn-1 {
+    100% {  opacity: 1;}
+}
 
 .owner-content img{
   float:right;
@@ -1986,8 +2004,11 @@ letter-spacing: 0.02em;
   height:591px;
   font-weight:bold;
   font-size:1.4rem;
-  display:flex;
   align-items: center;
+}
+
+.p-p-5 {
+  padding: 6rem!important;
 }
 
 .service{
@@ -2339,9 +2360,16 @@ letter-spacing: 0.02em;
 }
 
 .font-ch{
-  color:#F5C5DA;
+  color:#F5C5DA!important;
 }
+.font-we {
+  font-size: 1.125rem!important;
+    font-style: normal!important;
+    font-weight: bold!important;
+    letter-spacing: 0.02em!important;
+    margin-bottom: 0!important;
 
+}
 .font-ch p {
   font-size: 1.125rem;
 }
@@ -2395,21 +2423,25 @@ letter-spacing: 0.02em;
     top: 72%;
     right: 42%;
 }
-
+.about-all {
+  display: flex;
+}
 .bg-image3{
-  position:absolute;    
-  top:18%;
-  left: 28.8%;
+  position: relative;;    
+  left: 28.4%;
   width: 80%;
   height:630px;
   background-image:url("../images/img_header2.png");
   z-index:-1;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden!important;
   opacity: 0.2;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-
+.bg-image3 img {
+  overflow-x: hidden!important;
+}
 /* アバウト */
 
 .container-about {
@@ -2419,6 +2451,8 @@ letter-spacing: 0.02em;
 .about-text {
   width: 70%;
   margin: 6% 0 0 6%;
+  z-index: 3;
+    position: absolute;
 }
 
 .about-text p {
@@ -2437,7 +2471,7 @@ letter-spacing: 0.02em;
 .about-work {
   line-height: 54px;
   position: absolute;
-  bottom: 17%;
+  bottom: 28%;
   left: 68%;
 }
 
