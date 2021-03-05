@@ -2166,6 +2166,7 @@ position: absolute;
 
 .li-text-2 {
   top: -112px;
+  margin-bottom:32px;
 }
 
 .li-text{
@@ -2185,7 +2186,6 @@ font-weight: bold;
 font-size: 1.875rem;
 margin-bottom: 20px;
 }
-
 /* 導入メリット */
 .merit-container {
   padding-top: 120px;
