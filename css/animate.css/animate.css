@@ -1914,7 +1914,6 @@
 .animate__fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  animation-delay: 0.9s;
 }
 @-webkit-keyframes fadeInLeftBig {
   from {
@@ -2037,6 +2036,7 @@
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
+
 @-webkit-keyframes fadeInUpBig {
   from {
     opacity: 0;
