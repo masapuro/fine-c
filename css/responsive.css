@@ -171,6 +171,12 @@
         position: absolute;
     left: -22px;
     }
+    .text-area-res1 h3{
+        position: relative!important;
+    top: 142px!important;
+    width: 106px;
+}
+    }
     .res-plan {
     position: relative!important;
     top: 128px!important;
@@ -280,7 +286,7 @@
        line-height: 24px!important;
        border-radius: 1px!important;
    }
-   .text-area h3 {
+   .text-area-mente h3 {
     position: relative!important;
     left: 86%!important;
     top: -86px!important;
