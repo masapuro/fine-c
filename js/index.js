@@ -11,6 +11,16 @@
       return false;
     });
   });
+  // ハンバーガーメニュー
+  $("#wrapper").click(function () {
+    $(this).toggleClass("active");
+
+    if ($(this).hasClass("active")) {
+      $("#humburger").slideDown();
+    } else {
+      $("#humburger").slideUp();
+    }
+  });
 //   スライダー
   $(".slick01").slick({
     autoplay: true, //「オプション名: 値」の形式で書く
@@ -63,15 +73,4 @@
     });
   })();
 
-  // 画面表示
-  $(window).scroll(function (){
-    $(".res-plan").each(function(){
-      var hit		= $(this).offset().top;
-      var scroll	= $(window).scrollTop();
-      var wHeight	= $(window).height();
   
-      if (scroll > hit - wHeight + wHeight/100){
-        $(this).addClass("run");
-      }
-    });
-  });
