@@ -112,6 +112,14 @@
         width: 240px!important;
         height: 18px!important;
     }
+    .samplex {
+        width: 120px!important;
+        height: 18px!important;
+    }
+    .sampley {
+        width: 240px!important;
+        height: 18px!important;
+    }
     .header-content {
         height: 356px!important;
         margin-bottom: 0!important;
@@ -267,14 +275,16 @@
     height: 12px!important;
 }
    .mente-work , .about-work{
+       width: 16rem!important;
        height: 24px!important;
        line-height: 24px!important;
        border-radius: 1px!important;
    }
    .text-area h3 {
-       position: relative!important;
-       bottom: -140px!important;
-       left: 0%!important;
+    position: relative!important;
+    left: 86%!important;
+    top: -86px!important;
+
    }
    .merit-border {
        height: 196px!important;
