@@ -175,7 +175,6 @@
         position: relative!important;
     top: 142px!important;
     width: 106px;
-}
     }
     .res-plan {
     position: relative!important;
@@ -348,6 +347,7 @@
        padding-top: 16px!important;
    }
 }
+
 @media (min-width: 561px) and (max-width: 768px) {
     html {
         font-size: 64%!important;
@@ -854,9 +854,6 @@
 }
 .text-area-mente {
     margin: 18px 1px 0px 154px!important;
-}
-.text-area-mente h3 {
-
 }
 .merit-border {
        height: 336px!important;
