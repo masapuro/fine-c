@@ -69,7 +69,7 @@ a *:hover {
   padding-top: 8rem;
 }
 .pt-10 {
-  padding-top: 10rem;
+  padding-top: 8.5rem;
 }
 
 .pl-10{
@@ -1730,6 +1730,11 @@ body[data-aos-delay='16000'] [data-aos],
 html {
   overflow-x: hidden!important;
   }
+  nav#humburger li {
+    margin-right: 56px;
+    position: relative!important;
+right: 4px!important;
+}
 .right-header {
   position: relative;
   right:24%;
@@ -1743,6 +1748,22 @@ html {
   color: #fff!important;
 }
 
+nav#humburger {
+  margin: auto 0px auto auto;
+}
+nav#humburger li {
+  margin-right: 56px;
+}
+.header-content {
+  width: 100%;
+  margin: auto 0 auto auto;
+  display: flex;
+}
+.header-content a {
+  margin-left: 4%;
+  font-size: 1.2rem;
+  color: #fff;
+}
 li {
   list-style: none;
 }
@@ -1792,6 +1813,7 @@ li {
   left:0;
   background-color:white;
   width:70%;
+  height: 64%;
 }
 
 .owner h3{
@@ -1806,14 +1828,13 @@ li {
 }
 
 .owner  p {
-  width: 756px;
+width: 756px;
 font-size: 1.125rem;
 font-style: normal;
 font-weight: bold;
 line-height: 160%;
 color: #676767;
 letter-spacing: 0.02em;
-
 }
 
 .owner video {
@@ -1881,6 +1902,9 @@ letter-spacing: 0.02em;
     width: 0;
     font-size: 0;
     background-color: #fff;
+    height: 0px;
+  }
+  10% {
     height: 52px;
   }
 }
@@ -1938,24 +1962,40 @@ letter-spacing: 0.02em;
     transform: translateX(100%);
   }
 }
+
 /* ここまで */
-@-webkit-keyframes fadeinUp {
+@keyframes fadeInUp {
 	0%{
-		opacity:0;
-	}
-	75%{
-		opacity:0.5;
-	}
-	100% {
-		opacity:1;
+    opacity:0;
+  }
+  100% {
+    opacity:1;
 	}
 }
 /* キーフレームをanimationプロパティで指定 */
 .animate__fadeInUp{
-	-webkit-animation: fadeinUp 1s linear 0s 1;
+  opacity: 0;
+  animation: fadeIn 1.5s;
+  animation-delay: 1.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInUp-3{
+  0% {
+    opacity: 0;/* 透明 */  }
+  100% {
+    opacity: 1;/* 不透明 */
+  }
+}
+
 .animate__fadeInUp-3 {
-  -webkit-animation: fadeinUp 1.5s linear 0s 1;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;/* アニメーション時間 */
+  animation-delay : 2.2s;/* 変化開始の時間 */
+  animation-name: fadeInUp-3;/* アニメーション名 */
+  animation-iteration-count: 1;/* アニメーションの繰り返し（無限）*/
+  animation-fill-mode: forwards; /*これで値を保持*/
 }
 @-webkit-keyframes fadeinUpDown {
 	0%{
@@ -2008,7 +2048,7 @@ letter-spacing: 0.02em;
 }
 
 .p-p-5 {
-  padding: 6rem!important;
+  padding: 6rem;
 }
 
 .service{
@@ -2099,7 +2139,6 @@ letter-spacing: 0.02em;
   text-align:center;
   color:white;
   font-weight:bold;  
-  width:14em;
   border-radius:3px;
   box-shadow: 0 0 8px gray;
 }
@@ -2242,7 +2281,7 @@ margin-bottom: 20px;
 }
 
 .merit-before {
-  max-width: 36%!important;
+  max-width: 36%;
 }
 
 .row-before-merit {
@@ -2418,7 +2457,7 @@ letter-spacing: 0.02em;
 }
 
 .text-area-mente {
-  width: 102%;
+  width: 120%;
   position: relative;
     top: 72%;
     right: 42%;
